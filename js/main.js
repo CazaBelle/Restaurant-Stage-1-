@@ -163,7 +163,7 @@ createRestaurantHTML = (restaurant) => {
   address.innerHTML = restaurant.address;
   li.append(address);
 
-  const more = document.createElement('a');
+  const more = document.createElement('button');
   more.innerHTML = 'View Details';
   more.href = DBHelper.urlForRestaurant(restaurant);
   li.append(more);
@@ -185,5 +185,7 @@ addMarkersToMap = (restaurants = self.restaurants) => {
     self.markers.push(marker);
   });
 
-}; 
+};
+
+// /*ServiceWorker script to cache requests//
 
