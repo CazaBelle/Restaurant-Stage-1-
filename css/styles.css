@@ -13,7 +13,7 @@ body {
   position:relative;
   display:flex;
   flex-direction: column;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 ul, li {
 	font-family: Arial, Helvetica, sans-serif;
@@ -316,26 +316,26 @@ nav h1 a {
 /*Responsiveness/*
 /* Adjust title padding */
 @media screen and (min-width: 397px) {
-  .title {
-      padding-top: 20px;
-  }
+    .title {
+        padding-top: 20px;
+    }
 }
 
 /* Medium devices */
 @media screen and (min-width: 500px) {
-  .inside #map-container {
-      height: 400px;
-  }
+    .inside #map-container {
+        height: 400px;
+    }
 
 
 }
 
 /* Larger devices */
 @media screen and (min-width: 678px) {
-  .inside #map-container {
-      height: 87%;
-      position: fixed;
-      right: 0;
-      top: 100px;
-      width: 50%;
-  }
+    .inside #map-container {
+        height: 87%;
+        position: fixed;
+        right: 0;
+        top: 100px;
+        width: 50%;
+    }

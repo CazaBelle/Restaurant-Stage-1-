@@ -7,4 +7,4 @@ registerServiceWorker = () => {
     }).catch(() => {
       console.log('Failed to register service worker.')
     })
-  }
+  }         
