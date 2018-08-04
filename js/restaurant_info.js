@@ -73,7 +73,8 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
   address.innerHTML = restaurant.address;
 
   const image = document.getElementById('restaurant-img');
-  image.className = 'restaurant-img'
+  image.className = 'restaurant-img';
+  image.setAttribute('alt', 'Image of Restaurant')
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
 
   const cuisine = document.getElementById('restaurant-cuisine');
@@ -104,6 +105,10 @@ fillRestaurantHoursHTML = (operatingHours = self.restaurant.operating_hours) => 
     row.appendChild(time);
 
     hours.appendChild(row);
+
+// add aria label to describe the fields & tabindex to focus the element
+hours.setAttribute('aria-label', 'Restaurant ' + self.restaurant.name + ' opening hours.')
+hours.setAttribute('tabindex', '0');
   }
 };
 
